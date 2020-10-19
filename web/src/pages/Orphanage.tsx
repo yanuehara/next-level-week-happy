@@ -2,20 +2,12 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
-import L from 'leaflet';
-
-import mapMarkerImg from '../images/map-marker.svg';
 
 import '../styles/pages/orphanage.css';
 import Sidebar from "../components/Sidebar";
+import happyMapIcon from "../utils/happyMapIcon";
 
-const happyMapIcon = L.icon({
-  iconUrl: mapMarkerImg,
 
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [0, -60]
-})
 
 export default function Orphanage() {
   return (
